@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Contactos" representedClassName="Contactos" syncable="YES">
+        <attribute name="conApeMaterno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conApePaterno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conApodo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conCalle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conCelular" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conCorreo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conCP" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conEstado" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conFechaNaci" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="conFoto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="conId" optional="YES" attributeType="Integer 32" minValueString="1" maxValueString="1" defaultValueString="1" syncable="YES"/>
+        <attribute name="conMunicipio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conNombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conPais" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="conTelFijo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contactos" positionX="-17955" positionY="2484" width="128" height="268"/>
+    </elements>
+</model>
