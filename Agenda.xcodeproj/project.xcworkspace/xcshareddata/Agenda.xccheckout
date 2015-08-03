@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>11AC0AB3-6290-41C9-855A-43F460DA1D39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Agenda</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ADA7A733B7B1CA27370018CD700C5BE944DEE70E</key>
+		<string>https://github.com/GuimelGMC/Agenda.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Agenda.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ADA7A733B7B1CA27370018CD700C5BE944DEE70E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/GuimelGMC/Agenda.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADA7A733B7B1CA27370018CD700C5BE944DEE70E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ADA7A733B7B1CA27370018CD700C5BE944DEE70E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Agenda</string>
+		</dict>
+	</array>
+</dict>
+</plist>

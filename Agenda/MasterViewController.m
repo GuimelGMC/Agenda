@@ -31,7 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+//    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissTeclado)];
+//    [self.view addGestureRecognizer:tap];
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     self.definesPresentationContext = YES;
 }
@@ -40,6 +41,9 @@
     _contactos = [NSMutableArray array];
     _contactos = [[[[CoreDataAPI instanciaCompartida] ejecutaComando:@"select" conEntidad:@"Contactos" yPredicado:nil] objectForKey:@"results"] mutableCopy];
     [self.tableView reloadData];
+}
+-(void)dismissTeclado {
+    [self.view endEditing:YES];
 }
 
 #pragma mark - Segues
@@ -114,5 +118,12 @@
 }
 
 #pragma mark- Metodos Search
-
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    _contactos = [searchText isEqualToString:@""] ? [[[[CoreDataAPI instanciaCompartida] ejecutaComando:@"select" conEntidad:@"Contactos" yPredicado:nil] objectForKey:@"results"] mutableCopy] : [[_contactos filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"conApodo contains[cd] %@ OR conNombre contains[cd] %@ OR conApePaterno contains[cd] %@ OR conApeMaterno contains[cd] %@ ",searchText,searchText,searchText,searchText]] mutableCopy];
+    [self.tableView reloadData];
+}
+#pragma mark- UIScrollViewDelegate
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
+    [self dismissTeclado];
+}
 @end
